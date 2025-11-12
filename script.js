@@ -13,7 +13,7 @@ document.getElementById("blackout-btn").addEventListener("click", function () {
     // Replace page content with new HTML
     document.body.innerHTML = `
 <section id="video">
-    <video id="myvideo" autoplay src="https://drive.google.com/file/d/16wKfJudW7sBIwWsv63eFo5T1U_5_2zF_/view?usp=sharing" style="position: absolute;top:0;left:0;width:100%;height:100%;object-fit: cover;pointer-events: none;"></video>
+    <video id="myvideo" autoplay src="./video.mp4" style="position: absolute;top:0;left:0;width:100%;height:100%;object-fit: cover;pointer-events: none;"></video>
 </section>
         `;
     // Optionally re-apply your styles (if <head> is removed)
@@ -130,4 +130,5 @@ papers.forEach((paper) => {
 document.getElementById("blackout-btn").addEventListener("click", function () {
   document.getElementById("blackout-overlay").classList.add("active");
 });
+
 
